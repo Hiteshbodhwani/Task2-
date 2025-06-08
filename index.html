@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Product App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Product Catalog</h1>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search Products..." />
+      <button onclick="searchProducts()">Search</button>
+      <button onclick="clearSearch()">Clear Searches</button>
+      <div class="sort-buttons">
+        <button onclick="sortProducts('low-high')">Price Low to High</button>
+        <button onclick="sortProducts('high-low')">Price High to Low</button>
+        <button onclick="sortProducts('rating')">Rating High to Low</button>
+      </div>
+    </div>
+    <div id="categoriesContainer"></div>
+    <button onclick="clearAllCategories()">Clear All Categories</button>
+    <div id="productContainer"></div>
+  </div>
+  
+
+
+  <script src="App.js"></script>
+</body>
+</html>
